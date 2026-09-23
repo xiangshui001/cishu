@@ -1,0 +1,29 @@
+{
+  "presentation_version": "1.0",
+  "build_date": "2026-09-23",
+  "source_commit": "fe0e149ccc88b4ae9d371bb2397c197be8106e79",
+  "source_draft_sha256": "3c0e4c17abc705c117aae4f0a7dcca4053dbf4044bdd0a8397566a263d998acb",
+  "main_slides": 23,
+  "reference_slides": 4,
+  "total_slides": 27,
+  "reference_entries": 35,
+  "all_slides_have_notes": true,
+  "editable_text_and_shapes": true,
+  "out_of_slide_shapes": [],
+  "font": "Noto Sans CJK SC",
+  "source_policy": "Adaptation of the existing draft; no new research or model results.",
+  "files": {
+    "slides/cishu_literature_review.pptx": {
+      "bytes": 163604,
+      "sha256": "381f16d92eac13e61d0a226b8da09f7c7deac391863cc5b9a15cddbb4e35f5a6"
+    },
+    "slides/speaker_notes.md": {
+      "bytes": 40706,
+      "sha256": "70ab07f66d2933aeb4a01f900e60aa3d12f8c6892d504cf719d0890b01006434"
+    },
+    "slides/cishu_literature_review.pdf": {
+      "bytes": 871603,
+      "sha256": "b1e26ea0c7b6c9fb5adbc6a73d2ef0283a7c68a8c228c908b10da93c27df1b6d"
+    }
+  }
+}
