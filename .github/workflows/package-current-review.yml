@@ -1,0 +1,27 @@
+name: Package current literature review
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'latest/**'
+      - '.github/workflows/package-current-review.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Rebuild current-review ZIP from committed materials
+        run: python latest/build_package.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: current-review-bundle
+          path: dist/辞书综述_完整材料包_20261008.zip
+          if-no-files-found: error
+          retention-days: 30
